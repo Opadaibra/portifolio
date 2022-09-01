@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul>
+                <li> <a href="https://github.com/Opadaibra">GitHub</a></li>
+                <li> <a href="https://www.youtube.com/channel/UCJQE-F31-aw6Qwv_vVZXcrQ">Youtube</a></li>
+                <li> <a href="https://www.linkedin.com/in/obada-ibra-b28354247/">LinkedIn</a></li>
+                <li> <a href="" id="email">Copy Gmail</a></li>
+            </ul>
+
+            <div class="menu_class">
+                <img src="./img/menu.png" class="menu">
+            </div>
+        </nav>
+        <div class="text_box">
+            <h1>I'm Obada Ibrahim</h1>
+            <p> you can Navigate through the links to find out more about me.</p>
+            <a href="https://t.me//Opadaibra">Contanct me</a>
+            <a href="https://drive.google.com/file/d/1CGdAL_9VkpSJudqj-O2iG1t6m4iJTVI1/view" class="btn">Download CV</a>
+        </div>
+        <div class="user_img"> <img src="img/blob model.2png.png"></div>
+    </div>
+    <script>
+        function copyTextToClipboard(text) {
+            if (!navigator.clipboard) {
+                fallbackCopyTextToClipboard(text);
+                return;
+            }
+            navigator.clipboard.writeText(text).then(function () {  
+                console.log('Async: Copying to clipboard was successful!');
+            }, function (err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+        }
+        document.getElementById('email').addEventListener('click', function (event) {
+            copyTextToClipboard('opadaibra@gmail.com');
+            alert("copied",);
+        })
+    </script>
+</body>
+
+</html>
